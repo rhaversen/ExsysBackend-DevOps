@@ -23,12 +23,12 @@ spec:
                 - name: backend-deployment
                   resources:
                       limits:
-                          cpu: "1"
+                          cpu: "0.5"
                           memory: "512Mi"
                       requests:
-                          cpu: "0.5"
+                          cpu: "0.2"
                           memory: "256Mi"
-                  image: "rhaversen/exsys-backend:dc3406ae9fd302cc957a61c8ab7b52d8b0e8482d"
+                  image: "rhaversen/exsys-backend:e45015838b17ca73034f254081224a3ea4e2c03c"
                   imagePullPolicy: Always
                   livenessProbe:
                       httpGet:
