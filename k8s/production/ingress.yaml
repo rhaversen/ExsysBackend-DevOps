@@ -16,10 +16,10 @@ spec:
     ingressClassName: nginx
     tls:
         -   hosts:
-                - kantine.nyskivehus.dk
+                - raindate.net
             secretName: backend-tls
     rules:
-        -   host: kantine.nyskivehus.dk
+        -   host: raindate.net
             http:
                 paths:
                     # API Path
