@@ -28,18 +28,18 @@ spec:
                         requests:
                             cpu: "250m"
                             memory: "200M"
-                    image: "rhaversen/exsys-backend:5ed881043793729053834091a43162ebaa75d028"
+                    image: "rhaversen/exsys-backend:d12d4acdd4228af1658d69464fff943cef645476"
                     imagePullPolicy: Always
                     livenessProbe:
                         httpGet:
-                            path: service/livez
+                            path: api/service/livez
                             port: 5000
                         periodSeconds: 10
                         initialDelaySeconds: 15
                         failureThreshold: 5
                     readinessProbe:
                         httpGet:
-                            path: service/readyz
+                            path: api/service/readyz
                             port: 5000
                         periodSeconds: 10
                         initialDelaySeconds: 15
